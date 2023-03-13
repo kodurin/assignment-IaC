@@ -34,14 +34,14 @@ variable "service_endpoints_enable" {
 
 # Variable declaration for the service endpoint 
 variable "service_endpoints" {
-  default = [""] 
+  default = ["Microsoft.KeyVault"] 
 }
 
 
 # Variable declaration for the service
 variable "service" {
   type = list
-  default = ["0","0","1"]
+  default = ["1","1","1"]
 }
 
 # Variable declaration for the Environment to be added

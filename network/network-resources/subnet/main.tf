@@ -5,6 +5,5 @@ resource "azurerm_subnet" "subnet" {
   virtual_network_name      = "${var.vnet_name}"
   resource_group_name       = "${var.resource_group_name}"
   address_prefixes           = [var.subnet_range[count.index]]
-  service_endpoints         = ["${var.service_endpoints_enable == 1 && var.service[count.index] == "1" ? var.service_endpoints[0] : ""}"]
-  
+  service_endpoints         = ["Microsoft.KeyVault"]
 }

@@ -1,4 +1,23 @@
+variable "azure_subscription_id" {
+  description = "subscription id"
+  default = ""
+}
 
+variable "azure_tenant_id" {
+  description = "tenant id"
+  default = ""
+}
+
+variable "azure_client_id" {
+  description = "value"
+  default = ""  
+}
+
+variable "azure_client_secret" {
+  description = "value"
+  default = ""
+  
+}
 
 # Variable Declaration for Resource group name
 variable "resource_group_name" {

@@ -5,10 +5,10 @@ module "Resources" {
   rg_enable                = 1
   vnet_enable              = 1
   subnet_count             = 3
-  management_subnet_enable = 1
-  er_subnet_enable         = 1
+  management_subnet_enable = 0
+  er_subnet_enable         = 0
   nsg_enable               = 1
-  rt_enable                = 1
+  rt_enable                = 0
   vnet_peering_enable      = 1
 
   # Parameter Definition for the Azure Network Foundation components

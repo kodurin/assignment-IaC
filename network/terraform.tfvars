@@ -2,10 +2,10 @@
 environment = "dev"
 
 # Parameter for Creating Azure Resources
-region              = "Southeast Asia"
-resource_group_name = "githubnetworking"
+region              = "UK South"
+resource_group_name = "3-tier-app1"
 # Parameter for Create Virtual network and Subnets
-vnet_name               = ["cloud-engg-project1", "cloud-engg-project2"]
+vnet_name               = ["vnet11", "vnet22"]
 vnet_address            = ["10.100.0.0/16", "10.200.0.0/16"]
 subnet_names            = ["Web", "App", "DB"]
 subnet_count            = 3
